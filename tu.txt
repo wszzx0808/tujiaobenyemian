@@ -32,8 +32,7 @@ OrionLib:Destroy()
 
 Tab:AddLabel("版本:1.1")
 
-Tab:AddLabel("更新内容:破坏模拟器
-ybjfd")
+Tab:AddLabel("更新内容:破坏模拟器")
 
 Tab:AddLabel("感谢使用土脚本")
 
@@ -470,6 +469,52 @@ Tab:AddButton({
        })
       end    
    })
+local Tab = Window:MakeTab({
+	Name = "破坏模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
+Tab:AddButton({
+	Name = "获得钱",
+	Callback = function()
+      		print("button pressed")
+game:GetService("ReplicatedStorage").Remotes.generateBoost:FireServer("Coins", 480, 99999999)
+OrionLib:MakeNotification({
+	Name = "提示",
+	Content = "获得钱开启成功",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "获得等级",
+	Callback = function()
+      		print("button pressed")
+game:GetService("ReplicatedStorage").Remotes.generateBoost:FireServer("Levels", 480, 10)
+OrionLib:MakeNotification({
+	Name = "提示",
+	Content = "获得等级开启成功",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+  	end    
+})
+
+Tab:AddButton({
+	Name = "无限子弹",
+	Callback = function()
+      		print("button pressed")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/AquaModz/DestructionSIMModded/main/DestructionSimAqua.lua'))()
+OrionLib:MakeNotification({
+	Name = "提示",
+	Content = "无限子弹开启成功",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+  	end    
+})
 
 OrionLib:Init()
