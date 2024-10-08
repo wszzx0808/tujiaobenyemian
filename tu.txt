@@ -30,26 +30,13 @@ OrionLib:Destroy()
    end    
 })
 
-Tab:AddButton({
- Name = "版本:1.0",
- Callback = function()
-        print("button pressed")
-   end    
-})
+Tab:AddLabel("版本:1.0")
 
-Tab:AddButton({
- Name = "感谢使用土脚本",
- Callback = function()
-        print("button pressed")
-   end    
-})
+Tab:AddLabel("感谢使用土脚本")
 
-Tab:AddButton({
- Name = "作者🐧:1961816179",
- Callback = function()
-        print("button pressed")
-   end    
-})
+Tab:AddLabel("作者🐧:1961816179")
+
+Tab:AddLabel("作者:土")
 
 local Tab = Window:MakeTab({
  Name = "玩家通用",
