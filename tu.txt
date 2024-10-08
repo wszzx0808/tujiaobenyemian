@@ -2,6 +2,22 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "土脚本", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "roblox启动"}) 
 
+Tab:AddBind({
+	Name = "卡密测试",
+	Default = key,
+	Hold = true,
+	Callback = function()
+		print("press")
+	end    
+})
+
+--[[
+Name = <string> - The name of the bind.
+Default = <keycode> - The default value of the bind.
+Hold = <bool> - Makes the bind work like: Holding the key > The bind returns true, Not holding the key > Bind returns false.
+Callback = <function> - The function of the bind.
+]]
+
 OrionLib:MakeNotification({
  Name = "提示",
  Content = "进入土脚本成功",
@@ -467,5 +483,19 @@ Tab:AddButton({
        })
       end    
    })
+
+local Tab = Window:MakeTab({
+	Name = "破坏模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "获得钱",
+	Callback = function()
+      		print("button pressed")
+game:GetService("ReplicatedStorage").Remotes.generateBoost:FireServer("Coins", 480, 99999999)
+  	end    
+})
 
 OrionLib:Init()
