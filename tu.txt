@@ -30,7 +30,10 @@ OrionLib:Destroy()
    end    
 })
 
-Tab:AddLabel("版本:1.0")
+Tab:AddLabel("版本:1.1")
+
+Tab:AddLabel("更新内容:破坏模拟器
+ybjfd")
 
 Tab:AddLabel("感谢使用土脚本")
 
