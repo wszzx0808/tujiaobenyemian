@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "土脚本", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "roblox启动"}) 
+local Window = OrionLib:MakeWindow({Name = "土脚本", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "roblox启动"}) 
 
 OrionLib:MakeNotification({
  Name = "提示",
