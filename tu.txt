@@ -469,6 +469,7 @@ Tab:AddButton({
        })
       end    
    })
+
 local Tab = Window:MakeTab({
 	Name = "破坏模拟器",
 	Icon = "rbxassetid://4483345998",
