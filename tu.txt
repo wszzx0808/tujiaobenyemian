@@ -524,3 +524,7 @@ OrionLib:MakeNotification({
 OrionLib:Init()
 
 else
+
+game.Players.LocalPlayer:Kick("卡密错误")    
+end
+end)
