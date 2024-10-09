@@ -32,7 +32,7 @@ OrionLib:Destroy()
 
 Tab:AddLabel("版本:1.1")
 
-Tab:AddLabel("此脚本为免费，拿去圈钱的人我操你妈")
+Tab:AddLabel("此脚本为免费 拿去圈钱的人wcnm")
 
 Tab:AddLabel("更新内容:破坏模拟器")
 
