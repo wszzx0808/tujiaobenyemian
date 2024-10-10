@@ -66,7 +66,7 @@ Tab:AddButton({
  Name = "白脚本",
  Callback = function()
         print("button pressed")
-        getgenv().baiscript="作者修狗，白脚本" loadstring(game:HttpGet(('https://raw.githubusercontent.com/wev666666/bai--------------------script-----------------------------allscript----------------------IIIIIIIIIII/main/%E7%99%BD%E8%84%9A%E6%9C%AC%E5%8A%A0%E5%AF%86%E9%A1%B5%E9%9D%A2%E7%AC%AC%E4%B8%80%E5%B1%82'),true))()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wev666666/bai--------------------script-----------------------------allscript----------------------IIIIIIIIIII/main/%E7%99%BD%E8%84%9A%E6%9C%AC%E5%8A%A0%E5%AF%86%E9%A1%B5%E9%9D%A2%E7%AC%AC%E4%B8%80%E5%B1%82'),true))()
         OrionLib:MakeNotification({
             Name = "提示",
             Content = "白脚本开启成功",
