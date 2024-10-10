@@ -32,13 +32,49 @@ OrionLib:Destroy()
 
 Tab:AddLabel("版本:1.1")
 
-Tab:AddLabel("更新内容:破坏模拟器")
+Tab:AddLabel("更新内容:各大脚本")
+
+Tab:AddLabel("此脚本为免费脚本 拿去圈钱的人我操你妈")
 
 Tab:AddLabel("感谢使用土脚本")
 
 Tab:AddLabel("作者🐧:1961816179")
 
 Tab:AddLabel("作者:土")
+
+local Tab = Window:MakeTab({
+	Name = "各大脚本",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+ Name = "龙脚本破解",
+ Callback = function()
+        print("button pressed")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nahida-cn/Roblox/main/long"))()
+        OrionLib:MakeNotification({
+            Name = "提示",
+            Content = "龙脚本开启成功",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+   end    
+})
+
+Tab:AddButton({
+ Name = "白脚本",
+ Callback = function()
+        print("button pressed")
+        getgenv().baiscript="作者修狗，白脚本" loadstring(game:HttpGet(('https://raw.githubusercontent.com/wev666666/bai--------------------script-----------------------------allscript----------------------IIIIIIIIIII/main/%E7%99%BD%E8%84%9A%E6%9C%AC%E5%8A%A0%E5%AF%86%E9%A1%B5%E9%9D%A2%E7%AC%AC%E4%B8%80%E5%B1%82'),true))()
+        OrionLib:MakeNotification({
+            Name = "提示",
+            Content = "白脚本开启成功",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+   end    
+})
 
 local Tab = Window:MakeTab({
  Name = "玩家通用",
