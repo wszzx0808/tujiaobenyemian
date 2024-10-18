@@ -377,6 +377,26 @@ Tab:AddButton({
    })
 
 local Tab = Window:MakeTab({
+ Name = "doors:rooms",
+ Icon = "rbxassetid://4483345998",
+ PremiumOnly = false
+})
+
+Tab:AddButton({
+ Name = "自动走rooms(别动)",
+ Callback = function()
+        print("button pressed")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wszzx0808/1/refs/heads/main/roomszd.txt"))()
+       OrionLib:MakeNotification({
+        Name = "提示",
+        Content = "自动rooms开启成功",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+   end    
+})
+
+local Tab = Window:MakeTab({
  Name = "doors第2章",
  Icon = "rbxassetid://4483345998",
  PremiumOnly = false
@@ -386,7 +406,7 @@ Tab:AddButton({
  Name = "ZS lll 卡密:nrty",
  Callback = function()
         print("button pressed")
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/ZS%20III"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/ZS%20III"))()
        OrionLib:MakeNotification({
         Name = "提示",
         Content = "ZS lll开启成功",
