@@ -30,9 +30,9 @@ OrionLib:Destroy()
    end    
 })
 
-Tab:AddLabel("版本:1.3")
+Tab:AddLabel("版本:1.4")
 
-Tab:AddLabel("更新内容:飞行")
+
 
 Tab:AddLabel("此脚本为免费脚本 拿去圈钱的人我操你妈")
 
