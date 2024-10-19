@@ -33,7 +33,7 @@ OrionLib:Destroy()
 Tab:AddLabel("版本:1.4")
 
 Tab:AddButton({
-	Name = "Button!",
+	Name = "更新日志",
 	Callback = function()
       	print("button pressed")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/wszzx0808/tujiaobenyemian/refs/heads/main/gengxing.txt"))()
