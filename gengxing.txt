@@ -1,0 +1,11 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "更新日志", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = "false"})
+
+local Tab = Window:MakeTab({
+	Name = "1.4",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("自动rooms")
