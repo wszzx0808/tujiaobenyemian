@@ -32,7 +32,13 @@ OrionLib:Destroy()
 
 Tab:AddLabel("版本:1.4")
 
-
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      	print("button pressed")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wszzx0808/tujiaobenyemian/refs/heads/main/gengxing.txt"))()
+  	end    
+})
 
 Tab:AddLabel("此脚本为免费脚本 拿去圈钱的人我操你妈")
 
