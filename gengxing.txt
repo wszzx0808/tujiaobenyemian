@@ -2,6 +2,14 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "更新日志", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroEnabled = "false"})
 
+Tab:AddButton({
+	Name = "返回",
+	Callback = function()
+      		print("button pressed")
+
+  	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "1.4",
 	Icon = "rbxassetid://4483345998",
