@@ -372,6 +372,7 @@ local Tab = Window:MakeTab({
  Icon = "rbxassetid://4483345998",
  PremiumOnly = false
 })
+
 Tab:AddButton({
     Name = "xk",
     Callback = function()
@@ -384,6 +385,7 @@ Tab:AddButton({
    })
       end    
    })
+
 Tab:AddButton({
  Name = "自动走rooms(别动)",
  Callback = function()
