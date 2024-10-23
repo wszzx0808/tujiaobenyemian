@@ -17,3 +17,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/wszzx0808/tujiaobenye
 })
 
 Tab:AddParagraph("1.4","自动rooms")
+
+Tab:AddParagraph("1.5","xk")
