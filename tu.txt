@@ -22,8 +22,6 @@ local Tab = Window:MakeTab({
  PremiumOnly = false
 })
 
-Tab:AddLabel("你的注入器")..identifyexecutor()
-
 Tab:AddButton({
  Name = "销毁UI",
  Callback = function()
