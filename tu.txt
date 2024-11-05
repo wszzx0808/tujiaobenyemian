@@ -50,7 +50,7 @@ Tab:AddLabel("你的注入器:"..identifyexecutor())
 
 Tab:AddLabel("你在的服务器id:"..game.GameId)
 
-Tab:AddLabel("你的帐号年龄:"..player.AccountAge..)
+Tab:AddLabel("你的用户id:"..game.Players.LocalPlayer.UserId)
 
 local Tab = Window:MakeTab({
 	Name = "各大脚本",
