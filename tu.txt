@@ -48,7 +48,7 @@ Tab:AddLabel("作者🐧:1961816179")
 
 Tab:AddLabel("作者:土")
 
-Tab:AddLabel("你的帐号年龄:"..player.AccountAge.."天")
+Tab:AddLabel("你的注入器:"..identifyexecutor())
 
 local Tab = Window:MakeTab({
 	Name = "各大脚本",
