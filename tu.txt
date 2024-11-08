@@ -54,8 +54,6 @@ Tab:AddLabel("你的用户id:"..game.Players.LocalPlayer.UserId)
 
 Tab:AddLabel("你在的服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
 
-Tab:AddLabel("你的帐号年龄:"..player.AccountAge..)
-
 local Tab = Window:MakeTab({
 	Name = "各大脚本",
 	Icon = "rbxassetid://4483345998",
